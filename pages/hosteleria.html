@@ -13,19 +13,45 @@
     <title>TravelWorld - Hosteleria</title>
 </head>
 <body>
-    <header>
-        <a href="../index.html" class="logo"><img
-                src="../assets/globe-asia-australia.svg" alt="">
-            <h2>TravelWorld</h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html#inicio">Inicio</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./hosteleria.html">Hosteleria</a></li>
-                <li><a href="./actividades.html">Actividades</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header class="row">
+        <nav class="navbar navbar-expand-lg"> 
+            <div class="container-fluid">
+                <a class="navbar-brand logo col-lg-6 colorennav" href="../index.html"><img      
+                        src="../assets/globe-asia-australia.svg" alt="">
+                    <h2>TravelWorld</h2>
+                </a>
+                <button class="navbar-toggler colorennav" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  col-lg-6" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="colorennav" aria-current="page"
+                                href="../index.html#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="colorennav"
+                                href="./destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="colorennav"
+                                href="./hosteleria.html">Hosteleria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="colorennav"
+                                href="./actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="colorennav"
+                                href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -52,7 +78,6 @@
                         <option value="4 personas">4 Pers</option>
                     </select>
                 </div>
-
             </form>
             <div>
                 <input type="submit" value="Enviar" id="message" class="btn-submit">
@@ -74,10 +99,13 @@
     </main>
     <footer>
         <nav>
-            <a href="./index.html"><img src="../assets/globe-asia-australia.svg"
+            <div>
+            <a href="../index.html"><img src="../assets/globe-asia-australia.svg"
                     alt="Logo">
                 <h2>TravelWorld</h2>
             </a>
+            </div>
+            <div>
             <a href="https://www.google.com.ar/maps/place/Pueyrredon+Y+C%C3%B3rdoba/@-34.5982336,-58.4064114,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcca918559e3ab:0xecd06364de6ba42c!8m2!3d-34.598238!4d-58.4038365!16s%2Fg%2F11fnwh25vw?entry=ttu"
                 target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                     width="16" height="16" fill="currentColor"
@@ -105,6 +133,7 @@
                 </svg>
                 +54 1131478315
             </a>
+        </div>
         </nav>
     </footer>
     <script

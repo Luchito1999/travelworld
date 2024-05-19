@@ -29,29 +29,33 @@ header {
     border: solid 0.1rem black;
     max-width: 100%;
     align-items: center;
-    height: 7rem;
+    /* height: 7rem; */
 }
 header a {
     text-decoration: none;
-    padding: 2rem;
+    padding: 1rem;
     color: white;
 }
 header nav {
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 7rem;
+    /* height: 7rem; */
     width: 100%;
 
 } 
 header nav ul{
     display: flex;
+    flex-direction: row;
     justify-content: right;
     font-size: 2rem;
     align-items: center;
-    padding: 5rem;
+    padding: 1rem;
     list-style: none;
     width: 100%;
+}
+header nav ul li {
+    display: flex;
 }
 .logo h2 {
     font-size: 3rem;
@@ -60,13 +64,17 @@ header nav ul{
 .logo {
     display: flex;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
     /* flex-direction: row; */
 }
 .logo img {
     height: 6rem;
     width: 6rem;
     margin-right: 2rem;
+}
+header button span{
+    background-color: gray;
+    color: gray;
 }
 /*body*/
 body {
@@ -140,11 +148,15 @@ footer nav {
 footer nav a:hover, header nav ul li a:hover{
     color: white;
 }
-footer nav a {
+footer nav div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 2rem;
+}
+footer nav div a {
+    display: flex;
+    align-items: center;
 }
 footer nav a h2 {
     font-size: 2.5rem;
@@ -202,22 +214,14 @@ main h2 {
     font-optical-sizing: auto;
     font-style: normal;
     text-align: center;
-    padding: 5rem; 
+    padding: 2rem;
 }
-/* div {
-    display: flex;
-    width: 100%;
-    height: 1rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    align-items: center;
-} */
 .pstyle {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: italic;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .inline {
@@ -232,27 +236,14 @@ main h2 {
 }
 
 /*formulario*/
-/* ul li {
-    list-style-type: none;
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.8rem;
-    display: inline;
-    border: solid 1px black;
-    text-align: center;
-} */
 input select {
     display: inline-block;
     margin-bottom: 0.5rem;
     width: 10rem;
 }
-
 textarea {
     height: 5rem;
 }
-
 label {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -261,18 +252,15 @@ label {
     font-size: 3.5rem;
     margin: 3rem;
 }
-
 input {
     width: 20rem;
     text-align: center;
     height: 2.5rem;
 }
-
 select {
     width: 20rem;
     height: 2.5rem;
 }
-
 .btn-submit {
     background-color: black;
     border-radius: 20%;
@@ -285,10 +273,9 @@ select {
     font-style: normal;
     text-align: center;
     font-size: 2rem;
-    margin-top: 3rem;
+    margin: 3rem;
     height: 4rem;
 }
-
 .btn-ig {
     border-radius: 30%;
     width: 6rem;
@@ -299,7 +286,6 @@ select {
     right: 1rem;
     margin-right: 1rem;
 }
-
 /*----------------------------------------*/
 /* index */
 .colum3{
@@ -310,7 +296,7 @@ select {
     "titulo titulo titulo"
     "colum1 colum2 colum3";
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     justify-items: stretch;
     padding-top: 5rem;
 }
@@ -344,12 +330,17 @@ select {
     align-items: center;
     justify-content: space-between;
 }
-
 .hostpage form {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+.hostpage input {
+    margin-bottom: 4rem;
+}
+aside {
+    margin-top: 4rem;
 }
 .tipoalojamiento {
     display: grid;
@@ -398,17 +389,31 @@ select {
 }
 /* fin hosteleria */
 /* contacto */
-.hostpage2 {
+.contacto {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* height: 100%; */
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.contacto form div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.hostpage2 form {
+    justify-content: center;
     height: 100%;
     width: 100%;
+}
+.contacto input {
+    display: flex;
+    align-items: center;
 }
 /* fin contacto */
 .destinopage {
@@ -434,7 +439,11 @@ select {
     text-align: center;
     font-size: 2rem;
 }
-
+iframe {
+    width: 100%;
+    margin-right: 3rem;
+    align-items: center;
+}
 .destinopage img {
     width: 150%;
     height: 150%;
@@ -500,35 +509,53 @@ body h3 {
         height: 100%;
     }
     header nav div {
+        display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
+    }
+    header nav div div ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
     .colum3 div {
         display: flex;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     header nav a {
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         max-width: 100%;
     }
     nav {
         padding: 1rem 0rem;
     }
-    nav ul {
+    footer nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer nav div div ul {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        justify-content: center;
+        align-items: flex-start;
     }
     h1 {
         font-size: 4rem;
     }
     main h2 {
+        font-weight: 600;
         font-size: 3rem;
     }
     .pstyle{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     label {
         font-size: 2rem;
@@ -539,12 +566,15 @@ body h3 {
         width: 100%;
     }
     footer nav {
+        display: flex;
+        flex-direction: column;
         justify-content: stretch;
         align-items: center;
         width: 100%;
     }
     footer nav a {
-        font-size: 1.3rem;
+        display: flex;
+        font-size: 1.6rem;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -560,10 +590,210 @@ body h3 {
         height: 3rem;
         width: 3rem;
     }
+    .colum3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "colum1 colum1 colum1"
+        "colum2 colum2 colum2"
+        "colum3 colum3 colum3";
+    }
+    .hostpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hostpage form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 4rem;
+    }
+    .tipoalojamiento {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .img4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .img5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .img6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .img7{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .img8{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
 }
-
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: 100%;
+    }
+    header nav div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    header nav div div ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .colum3 div {
+        display: flex;
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    header nav a {
+        justify-content: center;
+        max-width: 100%;
+    }
+    nav {
+        padding: 1rem 0rem;
+    }
+    footer nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer nav div div ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    main h2 {
+        font-size: 3rem;
+    }
+    .pstyle{
+        font-size: 2rem;
+    }
+    label {
+        font-size: 2rem;
+    }
+    footer {
+        flex-direction: row;
+        justify-content:stretch;
+        width: 100%;
+    }
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        width: 100%;
+    }
+    footer nav a {
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    footer nav a svg {
+        height: 3rem;
+        width: 3rem;
+    }
+    footer nav a h2 {
+        font-size: 2rem;
+    }
+    footer nav a img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .hostpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hostpage form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 4rem;
+    }
+    .tipoalojamiento {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .img4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .img5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .img6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .img7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .img8{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}
 
 /* desktop */
 @media screen and (min-width: 1024px) {}
