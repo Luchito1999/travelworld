@@ -384,44 +384,47 @@ html body footer img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  body header {
+  header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     height: 100%;
   }
-  body header nav {
+  header nav {
     padding: 1rem 0rem;
   }
-  body header nav a {
+  header nav a {
     justify-content: center;
     font-size: 2rem;
     max-width: 100%;
   }
-  body header nav div {
+  header nav div {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
   }
-  body header nav div div ul {
+  header nav div div ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
-  body main h2 {
+  main .colum3 div {
+    display: flex;
+  }
+  main h2 {
     font-weight: 600;
     font-size: 3rem;
   }
-  body main .hostpage {
+  main .hostpage {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-  body main .hostpage form {
+  main .hostpage form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,136 +432,133 @@ html body footer img {
     width: 100%;
     margin: 4rem;
   }
-  body main .colum3 {
+  main .colum3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-areas: "titulo titulo titulo" "colum1 colum1 colum1" "colum2 colum2 colum2" "colum3 colum3 colum3";
   }
-  body main .tipoalojamiento {
+  main .tipoalojamiento {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
   }
-  body main .tipoalojamiento .img1 {
+  main .tipoalojamiento .img1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  body main .tipoalojamiento .img2 {
+  main .tipoalojamiento .img2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  body main .tipoalojamiento .img3 {
+  main .tipoalojamiento .img3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  body main .tipoalojamiento .img4 {
+  main .tipoalojamiento .img4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  body main .tipoalojamiento .img5 {
+  main .tipoalojamiento .img5 {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-  body main .tipoalojamiento .img6 {
+  main .tipoalojamiento .img6 {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-  body main .tipoalojamiento .img7 {
+  main .tipoalojamiento .img7 {
     grid-column: 1/2;
     grid-row: 7/8;
   }
-  body main .tipoalojamiento .img8 {
+  main .tipoalojamiento .img8 {
     grid-column: 1/2;
     grid-row: 8/9;
   }
-  body .colum3 div {
-    display: flex;
-  }
-  body h3 {
+  h3 {
     font-size: 2.5rem;
   }
-  body h1 {
+  h1 {
     font-size: 4rem;
   }
-  body .pstyle {
+  .pstyle {
     font-size: 2rem;
   }
-  body label {
+  label {
     font-size: 2rem;
   }
-  body footer {
+  footer {
     flex-direction: row;
     justify-content: stretch;
     width: 100%;
   }
-  body footer nav {
+  footer nav {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
     width: 100%;
   }
-  body footer nav a {
+  footer nav a {
     display: flex;
     font-size: 1.6rem;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  body footer nav a svg {
+  footer nav a svg {
     height: 3rem;
     width: 3rem;
   }
-  body footer nav a h2 {
+  footer nav a h2 {
     font-size: 2rem;
   }
-  body footer nav a img {
+  footer nav a img {
     height: 3rem;
     width: 3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  body header {
+  header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     height: 100%;
   }
-  body header nav {
+  header nav {
     padding: 1rem 0rem;
   }
-  body header nav a {
+  header nav a {
     justify-content: center;
     max-width: 100%;
   }
-  body header nav div {
+  header nav div {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
   }
-  body header nav div div ul {
+  header nav div div ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
-  body main .colum3 div {
+  main .colum3 div {
     display: flex;
     flex-direction: column;
   }
-  body main h2 {
+  main h2 {
     font-size: 3rem;
   }
-  body main .hostpage {
+  main .hostpage {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-  body main .hostpage form {
+  main .hostpage form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -566,96 +566,96 @@ html body footer img {
     width: 100%;
     margin: 4rem;
   }
-  body main .tipoalojamiento {
+  main .tipoalojamiento {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-  body main .tipoalojamiento .img1 {
+  main .tipoalojamiento .img1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  body main .tipoalojamiento .img2 {
+  main .tipoalojamiento .img2 {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  body main .tipoalojamiento .img3 {
+  main .tipoalojamiento .img3 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  body main .tipoalojamiento .img4 {
+  main .tipoalojamiento .img4 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  body main .tipoalojamiento .img5 {
+  main .tipoalojamiento .img5 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  body main .tipoalojamiento .img6 {
+  main .tipoalojamiento .img6 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
-  body main .tipoalojamiento .img7 {
+  main .tipoalojamiento .img7 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  body main .tipoalojamiento .img8 {
+  main .tipoalojamiento .img8 {
     grid-column: 2/3;
     grid-row: 4/5;
   }
-  body h3 {
+  h3 {
     font-size: 2.5rem;
   }
-  body footer {
+  footer {
     flex-direction: row;
     justify-content: stretch;
     width: 100%;
   }
-  body footer nav {
+  footer nav {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     align-items: center;
     width: 100%;
   }
-  body footer nav a {
+  footer nav a {
     display: flex;
     font-size: 2rem;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  body footer nav a svg {
+  footer nav a svg {
     height: 3rem;
     width: 3rem;
   }
-  body footer nav a h2 {
+  footer nav a h2 {
     font-size: 2rem;
   }
-  body footer nav a img {
+  footer nav a img {
     height: 3rem;
     width: 3rem;
   }
-  body footer nav div {
+  footer nav div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  body footer nav div div ul {
+  footer nav div div ul {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
   }
-  body h1 {
+  h1 {
     font-size: 4rem;
   }
-  body .pstyle {
+  .pstyle {
     font-size: 2rem;
   }
-  body label {
+  label {
     font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
