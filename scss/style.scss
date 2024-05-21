@@ -427,11 +427,6 @@ html {
             }
         }
         main {
-            .colum3 {
-                div {
-                display: flex;
-                }
-            }
             h2 {
                 font-weight: 600;
                 font-size: 3rem;
@@ -459,6 +454,9 @@ html {
                 "colum1 colum1 colum1"
                 "colum2 colum2 colum2"
                 "colum3 colum3 colum3";
+                div {
+                    display: flex;
+                    }
             }
             .tipoalojamiento {
                 display: grid;

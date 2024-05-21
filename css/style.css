@@ -411,9 +411,6 @@ html body footer img {
     justify-content: center;
     align-items: flex-start;
   }
-  main .colum3 div {
-    display: flex;
-  }
   main h2 {
     font-weight: 600;
     font-size: 3rem;
@@ -437,6 +434,9 @@ html body footer img {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-areas: "titulo titulo titulo" "colum1 colum1 colum1" "colum2 colum2 colum2" "colum3 colum3 colum3";
+  }
+  main .colum3 div {
+    display: flex;
   }
   main .tipoalojamiento {
     display: grid;
