@@ -1,0 +1,137 @@
+iframe {
+    width: 100%;
+    height: 80vh;
+    margin: 3rem;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+h1 {
+    font-size: 6rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin: 4rem;
+}
+h3 {
+    font-size: 3rem;
+    margin: 3rem;
+    text-align: center;
+}
+h2 {
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding: 2rem;
+}
+.pstyle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 2.5rem;
+}
+input {
+    width: 20rem;
+    text-align: center;
+    height: 2.5rem;
+    select {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        width: 10rem;
+    }
+}
+select {
+    width: 20rem;
+    height: 2.5rem;
+}
+textarea {
+    height: 5rem;
+}
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 3rem;
+}
+.btn-submit {
+    background-color: $negro;
+    border-radius: 20%;
+    color: $blanco;
+    width: 10rem;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem;
+    height: 4rem;
+}
+iframe {
+    width: 100%;
+    margin-right: 3rem;
+    align-items: center;
+}
+.medidas {
+    width: 100%;
+    height: 100%;
+    h5 {
+        font-size: 4rem;
+        font-family: "Oswald", sans-serif;
+    }
+    p {
+        font-size: 2.2rem;
+        font-family: "Oswald", sans-serif;
+    }
+}
+// mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    h2 {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .pstyle{
+        font-size: 2rem;
+    }
+    label {
+        font-size: 2rem;
+    }
+}
+// tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    .pstyle{
+        font-size: 2rem;
+    }
+    label {
+        font-size: 2rem;
+    }
+}
