@@ -6,6 +6,14 @@
 @import 'colum3';
 @import 'hosteleria';
 @import 'estilos';
+
+$font-weights:(
+    "regular": 400,
+    "sowsow": 500,
+    "medium": 600,
+    "bold": 800,
+);
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +27,37 @@ html {
     body {
         overflow-x: hidden;
         background-color: $verdeclaro;
+        .titulos {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            text-align: center;
+        }
+        h1{
+            font-weight: map-get($font-weights, "medium");
+            @extend .titulos;
+            margin: 4rem;
+            font-size: 5rem;
+        }
+        h2{
+            font-weight: map-get($font-weights, "sowsow");
+            @extend .titulos;
+            padding: 2rem;
+            font-size: 4rem;
+        }
+        p{
+            font-weight: map-get($font-weights, "regular");
+        }
+        .pstyle{
+            font-weight: map-get($font-weights, "regular");
+            font-family: "Poppins", sans-serif;
+            font-style: italic;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        label{
+            font-weight: map-get($font-weights, "regular");
+        }
         main {
             .parallax {
                 background-image: url(../assets/avionventana.jpg);
@@ -89,6 +128,10 @@ html {
 // mobile
 @media screen and (min-width: 320px) and (max-width: 767px) 
 {
+    body {
+        .pstyle{
+            font-size: 2rem;
+        }
         main {
             .hostpage {
                 display: flex;
@@ -105,6 +148,8 @@ html {
                 }
             }
         }
+
+    }
 }
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1023px)

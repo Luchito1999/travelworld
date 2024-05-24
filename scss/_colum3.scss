@@ -51,5 +51,9 @@
 }
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
+    svg {
+        padding: 1.5rem;
+        align-items: center;
+        width: 5rem;
+    }
 }

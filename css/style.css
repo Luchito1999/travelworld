@@ -249,8 +249,8 @@ footer img {
     width: 100%;
   }
   footer nav a svg {
-    height: 4rem;
-    width: 4rem;
+    height: 6rem;
+    width: 6rem;
   }
   footer nav a h2 {
     font-size: 2rem;
@@ -316,6 +316,13 @@ footer img {
   }
   .colum3 div {
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  svg {
+    padding: 1.5rem;
+    align-items: center;
+    width: 5rem;
   }
 }
 .tipoalojamiento {
@@ -451,45 +458,16 @@ iframe {
 
 p {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-style: italic;
   text-align: center;
   font-size: 3rem;
   padding: 2rem;
-}
-
-h1 {
-  font-size: 6rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  text-align: center;
-  margin: 4rem;
 }
 
 h3 {
   font-size: 3rem;
   margin: 3rem;
   text-align: center;
-}
-
-h2 {
-  font-size: 5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-optical-sizing: auto;
-  font-style: normal;
-  text-align: center;
-  padding: 2rem;
-}
-
-.pstyle {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  text-align: center;
-  font-size: 2.5rem;
 }
 
 input {
@@ -514,7 +492,6 @@ textarea {
 
 label {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-style: italic;
   text-align: center;
   font-size: 3.5rem;
@@ -567,9 +544,6 @@ iframe {
   h1 {
     font-size: 4rem;
   }
-  .pstyle {
-    font-size: 2rem;
-  }
   label {
     font-size: 2rem;
   }
@@ -607,6 +581,35 @@ html {
 html body {
   overflow-x: hidden;
   background-color: #d8d7a6;
+}
+html body .titulos, html body h2, html body h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+html body h1 {
+  font-weight: 600;
+  margin: 4rem;
+  font-size: 5rem;
+}
+html body h2 {
+  font-weight: 500;
+  padding: 2rem;
+  font-size: 4rem;
+}
+html body p {
+  font-weight: 400;
+}
+html body .pstyle {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 2.5rem;
+}
+html body label {
+  font-weight: 400;
 }
 html body main .parallax {
   background-image: url(../assets/avionventana.jpg);
@@ -673,13 +676,16 @@ html body .parallax2 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  main .hostpage {
+  body .pstyle {
+    font-size: 2rem;
+  }
+  body main .hostpage {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-  main .hostpage form {
+  body main .hostpage form {
     display: flex;
     flex-direction: column;
     align-items: center;
