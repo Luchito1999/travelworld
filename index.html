@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Travel World - Sitio Web de una Agencia de viajes.">
     <meta name="keywords" content="viajes, vacaciones, actividades, hotel">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -19,7 +20,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand logo col-lg-6 colorennav"
-                    href="../coder-curso/index.html"><img
+                    href="index.html"><img
                         src="./assets/globe-asia-australia.svg"
                         alt="Logo mundo">
                     <h2>TravelWorld</h2>
@@ -69,7 +70,7 @@
         <section class="colum3 row">
             <h2 class="col-sm-12">¿Que ofrece TravelWorld?</h2>
             <!-- <article> -->
-            <div class="sya col-sm-12">
+            <div data-aos="fade-right" class="sya col-sm-12">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                     class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                     <path
@@ -98,7 +99,7 @@
                     familia.
                 </p>
             </div>
-            <div class="cal col-sm-12">
+            <div data-aos="fade-left" class="cal col-sm-12">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                     class="bi bi-bookmark-star-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -158,6 +159,10 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>

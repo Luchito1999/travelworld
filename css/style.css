@@ -85,9 +85,12 @@ header button span {
   header nav {
     padding: 1rem 0rem;
   }
+  header nav h2 {
+    display: none;
+  }
   header nav a {
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     max-width: 100%;
   }
   header nav div {
@@ -536,16 +539,16 @@ iframe {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   h2 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 0.5rem;
   }
   label {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -606,7 +609,7 @@ html body .pstyle {
   font-family: "Poppins", sans-serif;
   font-style: italic;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 html body label {
   font-weight: 400;
@@ -677,6 +680,18 @@ html body .parallax2 {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   body .pstyle {
+    font-size: 1.3rem;
+  }
+  body main h1 {
+    font-size: 4rem;
+  }
+  body main h2 {
+    font-size: 3rem;
+  }
+  body main h3 {
+    font-size: 2.5rem;
+  }
+  body main .pstyle {
     font-size: 2rem;
   }
   body main .hostpage {
